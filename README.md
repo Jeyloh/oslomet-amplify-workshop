@@ -24,7 +24,7 @@ What you need is
 To get started, clone this repository by copying this into your terminal:
 
 ```
-git clone github.com
+git clone git@github.com:Jeyloh/oslomet-amplify-workshop.git
 cd oslomet-amplify-workshop
 npm install
 ```
@@ -42,15 +42,17 @@ First install the amplify package globally
 npm install -g @aws-amplify/cli
 ```
 
+Configuration involves connecting our AWS account to the computer we're using. We're basically setting up a profile to use for doing requests to Amplify.
+
 ```
 amplify configure
 ```
 
+During `amplify init`, give the project a name and when prompted, choose `AWS profile` to pick the profile you set up in the previous step.
+
 ```
 amplify init
 ```
-
-During `amplify init`, give the project a name and when prompted, choose `AWS profile` to pick the profile you set up in the previous step.
 
 ## Authentication
 
