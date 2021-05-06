@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// TODO #1: Uncommented these lines to set up the connection to the Cloud
+// import Amplify from 'aws-amplify';
+// import awsExports from './aws-exports';
+// Amplify.configure(awsExports);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
