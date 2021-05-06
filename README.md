@@ -1,4 +1,4 @@
-# Oslo Met Sanity tutorial
+# Oslo Met Amplify tutorial
 
 In this workshop we will set up a React web application hosted on AWS. We will use AWS Amplify to simply connect our frontend (React) app onto our backend (AWS).
 
