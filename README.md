@@ -16,13 +16,16 @@ What you need is
 - An AWS account (requires credit card on signup, but we will stay within the free-tier)
 - Minor git knowledge
 
+> **Note:** If you prefer to go your own route, this is a good tutorial:
+> https://docs.amplify.aws/start/getting-started/installation/q/integration/react
+
 ## Get started
 
 To get started, clone this repository by copying this into your terminal:
 
 ```
 git clone github.com
-cd oslomet-sanity-workshop
+cd oslomet-amplify-workshop
 npm install
 ```
 
@@ -32,6 +35,12 @@ _Q: Why do we use your github repository instead of setting everything up oursel
 2. There's also comments around the whole app to help you set up Amplify in the application, step by step - hopefully for a better understanding.
 
 Setup and initialise AWS Amplify in the directory
+
+First install the amplify package globally
+
+```
+npm install -g @aws-amplify/cli
+```
 
 ```
 amplify configure
@@ -55,12 +64,12 @@ amplify add auth
 Configurations
 
 ```
- Do you want to use the default authentication and security configuration?
- *Default configuration*
- How do you want users to be able to sign in?
- *Username*
- Do you want to configure advanced settings?
- *No, I am done.*
+ ? Do you want to use the default authentication and security configuration?
+ > Default configuration
+ ? How do you want users to be able to sign in?
+ > Username
+ ? Do you want to configure advanced settings?
+ > No, I am done.
 ```
 
 For configurations, give it a name, choose `Default configuration`, `Email` and `No` to advanced settings.
@@ -270,7 +279,9 @@ Sign in with the same user, and see your todos there. Now keep the windows open 
 
 If you want to remove the backend service from the cloud before you forget about it, you need to run this command in the terminal
 
-`amplify delete`
+```
+amplify delete
+```
 
 > You should do this because if you forget it, and it stays up for many years hosted online, someone can find it, sign in to it and spam the databases. This will be costly in the end.
 
